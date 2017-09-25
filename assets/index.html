@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<h1>Game!</h1>	
+			</div>
+			</div>
+		<div class="row">
+			<div class="col-md 6">
+				<button onclick="myFunction()">A</button>
+				<button onclick="myFunction()">B</button>
+				<button onclick="myFunction()">C</button>
+				<button onclick="myFunction()">D</button>
+				<button onclick="myFunction()">E</button>
+				<button onclick="myFunction()">F</button>
+				<button onclick="myFunction()">G</button>
+				<button onclick="myFunction()">H</button>
+				<button onclick="myFunction()">I</button>
+				<button onclick="myFunction()">J</button>
+				<button onclick="myFunction()">K</button>
+				<button onclick="myFunction()">L</button>
+				<button onclick="myFunction()">M</button>
+<!-- 			</div>
+<div class="col-md 6"> -->
+				<button onclick="myFunction()">N</button>
+				<button onclick="myFunction()">O</button>
+				<button onclick="myFunction()">P</button>
+				<button onclick="myFunction()">Q</button>
+				<button onclick="myFunction()">R</button>
+				<button onclick="myFunction()">S</button>
+				<button onclick="myFunction()">T</button>
+				<button onclick="myFunction()">U</button>
+				<button onclick="myFunction()">V</button>
+				<button onclick="myFunction()">W</button>
+				<button onclick="myFunction()">X</button>
+				<button onclick="myFunction()">Y</button>
+				<button onclick="myFunction()">Z</button>
+			</div>						
+		
+		</div>
+	</div>
+
+<script type="text/javascript">
+	var letterChoice = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+	var userGuess = 0;
+	var lettersRemain = 0;
+	var rightGuess = 0;
+	var wrongGuess = 0;
+
+
+//Letter is guessed
+
+
+//Guessed letter goes into userGuess, if correct, letter is added added to rightGuess, if wrong, it goes into wrongGuess. If it goes into wrong guess, user gets 5 more guesses.
+
+//if all 5 guesses are guessed without the answer being correct, game over alert
+
+//if answer is guessed, winner alert
+
+</script>
+</body>
+</html>
+
+<!-- Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
+Use key events to listen for the letters that your players will type.
+Display the following on the page:
+Press any key to get started!
+Wins: (# of times user guessed the word correctly).
+If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
+As the user guesses the correct letters, reveal them: m a d o _  _ a.
+Number of Guesses Remaining: (# of guesses remaining for the user).
+Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).
+After the user wins/loses the game should automatically choose another word and make the user play it.
+Hangman Game Bonuses
+
+Play a sound or song when the user guesses their word correctly, like in our demo.
+Write some stylish CSS rules to make a design that fits your game's theme.
+HARD MODE: Organize your game code as an object, except for the key events to get the letter guessed. This will be a challenge if you haven't coded with JavaScript before, but we encourage anyone already familiar with the language to try this out.
+Save your whole game and its properties in an object.
+Save any of your game's functions as methods, and call them underneath your object declaration using event listeners.
+Don't forget to place your global variables and functions above your object.
+Remember: global variables, then objects, then calls.
+Definitely talk with a TA or your instructor if you get tripped up during this challenge. -->
