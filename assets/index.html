@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/javaScript" href="assets/javascript/game.js">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
@@ -67,7 +68,7 @@
 	var letterChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 	var userGuess = "";
-	var lettersRemain = 0;
+	var guessRemain = 0;
 	var rightGuess = 0;
 	var wrongGuess = 0;
 	var randomLetter = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -84,37 +85,37 @@ $(".letter").on("click", function (event) {
 	$(this).fadeTo("slow",.5);
 	
 	if (userGuess === randomLetter) {
-		console.log("You are a good guesser!");
-	}
+		alert("You are a good guesser!");
+	} /*else {
+		alert('Keep guessing!');
 
-	// updateGuesses();
-
-
+};*/
 });
 
-function updateGuesses() {
+/*	function updateGuesses() {
 	var guessBox = $('.remainingGuess');
 
 	// grab the inner contents of that element
 	// e.g. '10'
-	var g = document.getElementsByClassName(".remainingGuess");
-	console.log(guessBox);
-
+	var i = document.getElementsByClassName(".remainingGuess");
 
 	// convert that value to a number
-
+	for (i = 0; i < 10; i--);
 	// decrease that number by 1
 	// e.g. var x = 10;
 	// x--;
 
 	// check to see if that number is 0 
 	// or less than 0
+	if (i > 10); {
+		alert("Better luck next time!");
+	}*/
 
 	// If you're out of guesses - do some work
 
 	// take that new value
 	// insert it back into that same html element
-}
+
 
 //guessed letter will cause fade button to fade
 
